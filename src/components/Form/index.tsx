@@ -96,7 +96,7 @@ function Form({ mode }: FormProps) {
 
         if (mode === "signup") {
           if (!value.match(regexPassword) || value === "") {
-            setErrorPassword(true);
+            setErrorPassword(false);
           } else {
             setErrorPassword(false);
           }
